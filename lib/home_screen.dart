@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_video_call_app/pages/call_page.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -52,9 +53,16 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(50.0),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 80, vertical: 10),
                 child: InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>
+                                CallPage(callID: idController.text)));
+                  },
                   child: Container(
                     height: 50,
                     width: double.infinity,

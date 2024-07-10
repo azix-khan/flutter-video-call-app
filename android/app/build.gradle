@@ -25,7 +25,7 @@ if (flutterVersionName == null) {
 
 android {
     namespace = "com.example.flutter_video_call_app"
-    compileSdk 33
+    compileSdk 34
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -57,4 +57,8 @@ android {
 
 flutter {
     source = "../.."
+}
+
+dependencies {
+  implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 }
