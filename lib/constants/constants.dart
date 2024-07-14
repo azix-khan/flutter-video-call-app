@@ -1,5 +1,5 @@
 class AppInfo {
-  static const appId = your appid here (from zegocloud console);
+  static const appId = your appid here (from ZegoCloud console);
   static const appSign =
-      'your appsign here';
+      'your appSign here (from ZegoCloud console)';
 }
